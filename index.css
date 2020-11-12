@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	font-family: TT Norms, Georgia, sans-serif;
+}
+body {
+	display: flex;
+	width: 900px;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	padding: 30px 50px 106px 50px;
+}
+
+/* Filter Devices Block */
+.filterDevices {
+	width: 320px;
+	height: 90px;
+	margin-bottom: 20px;
+}
+.filterDevices label {
+	height: 24px;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #8c8c8c;
+}
+.filterDevices button {
+	cursor: pointer;
+	float: right;
+	margin-top: 16px;
+	width: 90px;
+	height: 40px;
+	border: none;
+	outline: none;
+	background: #353535;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #ffffff;
+}
+.filterDevices button:hover {
+	background: rgba(53, 53, 53, 0.8);
+}
+.filterDevices input {
+	padding-left: 12px;
+	margin-top: 21px;
+	width: 210px;
+	height: 30px;
+	border: solid 1px #e5e5e5;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #353535;
+}
+.filterDevices input:focus {
+	outline: none;
+}
+
+/* Unit Name Block */
+.formInfo {
+	width: 100%;
+	display: flex;
+	margin-bottom: 46px;
+	justify-content: space-between;
+}
+.unitName {
+	width: 320px;
+	height: 80px;
+}
+.unitName p {
+	width: 225px;
+	height: 80px;
+	float: right;
+	margin-right: 35px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 0.5px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #353535;
+}
+
+/* Report Filters */
+.reportFilters {
+	width: 221px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+}
+.reportFilters select {
+	margin-top: 30px;
+	width: 220px;
+	height: 30px;
+	padding-left: 10px;
+	border: solid 1px #e5e5e5;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #353535;
+}
+.reportFilters select:focus {
+	outline: none;
+}
+.reportFilters fieldset {
+	padding: 0;
+	border: 0;
+	margin-top: 10px;
+	width: 102px;
+	height: 80px;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #353535;
+}
+
+.reportFilters label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	user-select: none;
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	color: #353535;
+}
+.reportFilters label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(./images/radio.svg);
+}
+.reportFilters input:checked + label:before {
+	background: url(./images/radioChecked.svg);
+}
+.reportFilters input {
+	display: none;
+}
+
+.reportFilters button {
+	cursor: pointer;
+	margin-top: auto;
+	width: 180px;
+	height: 40px;
+	border: none;
+	outline: none;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.16px;
+	font-feature-settings: "pnum" on, "lnum" on;
+	background: #4990e2;
+	border-radius: 3px;
+	color: #ffffff;
+}
+.reportFilters button:hover {
+	background: rgba(73, 144, 226, 0.8);
+}
+
+/* Divice Info */
+.deviceInfo {
+	width: 550px;
+	height: 330px;
+	background: #f7f7f7;
+	border-radius: 5px;
+}
+.deviceInfo ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 290px;
+	list-style-type: none;
+	padding: 20px 18.33px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #8c8c8c;
+}
+.black {
+	color: #444651;
+}
+.blue {
+	color: #4990e2;
+}
+
+/* Report Table */
+.report {
+	width: 900px;
+	height: 660px;
+
+	border: 1px dashed #939da6;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.report p {
+	width: 130px;
+	height: 19px;
+	margin-top: 40px;
+	margin-left: 40px;
+
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+.report table {
+	margin: auto;
+	margin-top: 7px;
+	width: 820px;
+	height: 514px;
+	border-collapse: collapse;
+}
+.report tbody {
+	vertical-align: top;
+}
+.report .head {
+	font-size: 13px;
+	line-height: 15px;
+	color: #939da6;
+	text-align: left;
+	height: 30px;
+}
+.report td {
+	padding-top: 20px;
+}
+.data {
+	width: 120px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #353535;
+}
+.ubs,
+.slope,
+.offset {
+	width: 120px;
+	font-size: 13px;
+	line-height: 15px;
+	color: #353535;
+}
+.ubs {
+	width: 240px;
+}
+.user {
+	font-size: 12px;
+	line-height: 14px;
+	color: #353535;
+}
+td img {
+	float: right;
+	margin-right: 54px;
+}
